@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dQQQSNXYWfcTo7NJAYTygfpeKJnaJNjyXxerBtUZDLil1V9vwRjs8KcH3L+GDbEZr0fz8SIT30OAE6dnolxEaQ==",
+  "dgSpecHash": "4Y5SsqB1s7qJpLTUAOhOoaqnHPgkCto2fr3RGJ64HqpZpi+N1R42612F07H+nGM8dvl4xuSMd1L3asK5Hs8r0Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nimap\\New folder\\COREAPI\\COREAPI\\COREAPI.csproj",
+  "projectFilePath": "C:\\Users\\Nimap\\New folder\\COREApi\\COREAPI\\COREAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nimap\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Nimap\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

@@ -1853,6 +1853,32 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "BuisnessLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "DataLayer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BuisnessLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BuisnessLayer.dll": {}
+        }
+      },
+      "DataLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.2"
+        },
+        "compile": {
+          "bin/placeholder/DataLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataLayer.dll": {}
+        }
       }
     }
   },
@@ -6228,10 +6254,22 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "BuisnessLayer/1.0.0": {
+      "type": "project",
+      "path": "../BuisnessLayer/BuisnessLayer.csproj",
+      "msbuildProject": "../BuisnessLayer/BuisnessLayer.csproj"
+    },
+    "DataLayer/1.0.0": {
+      "type": "project",
+      "path": "../DataLayer/DataLayer.csproj",
+      "msbuildProject": "../DataLayer/DataLayer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "BuisnessLayer >= 1.0.0",
+      "DataLayer >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.2",
@@ -6244,11 +6282,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nimap\\New folder\\COREAPI\\COREAPI\\COREAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Nimap\\New folder\\COREApi\\COREAPI\\COREAPI.csproj",
       "projectName": "COREAPI",
-      "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\COREAPI\\COREAPI.csproj",
+      "projectPath": "C:\\Users\\Nimap\\New folder\\COREApi\\COREAPI\\COREAPI.csproj",
       "packagesPath": "C:\\Users\\Nimap\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\COREAPI\\obj\\",
+      "outputPath": "C:\\Users\\Nimap\\New folder\\COREApi\\COREAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nimap\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6264,7 +6302,14 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Nimap\\New folder\\COREApi\\BuisnessLayer\\BuisnessLayer.csproj": {
+              "projectPath": "C:\\Users\\Nimap\\New folder\\COREApi\\BuisnessLayer\\BuisnessLayer.csproj"
+            },
+            "C:\\Users\\Nimap\\New folder\\COREApi\\DataLayer\\DataLayer.csproj": {
+              "projectPath": "C:\\Users\\Nimap\\New folder\\COREApi\\DataLayer\\DataLayer.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
