@@ -28,6 +28,7 @@ namespace COREAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
             services.AddDbContext<BookDBContext>(options => options.UseSqlServer(ConnectionString));
             services.AddTransient<IPostBook, PostBook>();
             services.AddTransient<IGetBookById, GetBookDetails>();
@@ -51,14 +52,14 @@ namespace COREAPI
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "COREAPI v1"));
             }
-
+            app.UseMiddleware<ExceptionMiddleware>();
             app.UseHttpsRedirection();
             app.UseRouting();
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
-{
-    endpoints.MapControllers();
-});
+                    {
+                        endpoints.MapControllers();
+                    });
         }
 
 

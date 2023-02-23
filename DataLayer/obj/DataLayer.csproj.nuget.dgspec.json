@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\DataLayer.csproj": {}
+    "C:\\Users\\Nimap\\New folder\\COREApi\\DataLayer\\DataLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\DataLayer.csproj": {
+    "C:\\Users\\Nimap\\New folder\\COREApi\\DataLayer\\DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\DataLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Nimap\\New folder\\COREApi\\DataLayer\\DataLayer.csproj",
         "projectName": "DataLayer",
-        "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\DataLayer.csproj",
+        "projectPath": "C:\\Users\\Nimap\\New folder\\COREApi\\DataLayer\\DataLayer.csproj",
         "packagesPath": "C:\\Users\\Nimap\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\obj\\",
         "projectStyle": "PackageReference",

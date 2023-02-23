@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YyVVsPrIeXMFCr2BPl7aPFETQj1nxZjeX9OiBNjtUSPxHkX4NkPM1mKqOqdC58PPR3blrW80yRGs5qFtQX+3kQ==",
+  "dgSpecHash": "eE6CCzT4yM/Apy6fWQNYuGLiS4BEBENtFdO42NYfQv7gnfZpCsXLvAkYOm0IpBs+1YC9AW9lQ8Hv4hNYC6TZzw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nimap\\New folder\\COREAPI\\BuisnessLayer\\BuisnessLayer.csproj",
+  "projectFilePath": "C:\\Users\\Nimap\\New folder\\COREApi\\BuisnessLayer\\BuisnessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nimap\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.2\\microsoft.entityframeworkcore.5.0.2.nupkg.sha512",
     "C:\\Users\\Nimap\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.2\\microsoft.entityframeworkcore.abstractions.5.0.2.nupkg.sha512",

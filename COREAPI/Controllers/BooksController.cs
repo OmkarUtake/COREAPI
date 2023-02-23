@@ -3,7 +3,6 @@ using BuisnessLayer.Services.DeleteBook;
 using BuisnessLayer.Services.GetBook;
 using BuisnessLayer.Services.UpdateBook;
 using COREAPI.DATA.ViewModel;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace COREAPI.Controllers
@@ -12,8 +11,6 @@ namespace COREAPI.Controllers
     [ApiController]
     public class BooksController : ControllerBase
     {
-
-
         private readonly IPostBook _AddBook;
         private readonly IGetBookById _bookdetail;
         private readonly IUpdateBook _updateBook;
