@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "EntityFramework/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/EntityFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -1854,17 +1867,19 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "BuisnessLayer/1.0.0": {
+      "DALayer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "DataLayer": "1.0.0"
+          "DataLayer": "1.0.0",
+          "EntityFramework": "5.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.2"
         },
         "compile": {
-          "bin/placeholder/BuisnessLayer.dll": {}
+          "bin/placeholder/DALayer.dll": {}
         },
         "runtime": {
-          "bin/placeholder/BuisnessLayer.dll": {}
+          "bin/placeholder/DALayer.dll": {}
         }
       },
       "DataLayer/1.0.0": {
@@ -1883,6 +1898,35 @@
     }
   },
   "libraries": {
+    "EntityFramework/5.0.0": {
+      "sha512": "WYfgJWKg/RjwU8pzZkImD9DsV+J1nqDcIGp1S0/bdnElKBmAaUC2nmq/QQAcco32KyQQWnLgJNiDzIOz2xWFbQ==",
+      "type": "package",
+      "path": "entityframework/5.0.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/App.config.transform",
+        "Content/Web.config.transform",
+        "entityframework.5.0.0.nupkg.sha512",
+        "entityframework.nuspec",
+        "lib/net40/EntityFramework.dll",
+        "lib/net40/EntityFramework.xml",
+        "lib/net45/EntityFramework.dll",
+        "lib/net45/EntityFramework.xml",
+        "tools/EntityFramework.PS3.psd1",
+        "tools/EntityFramework.PowerShell.Utility.dll",
+        "tools/EntityFramework.PowerShell.dll",
+        "tools/EntityFramework.psd1",
+        "tools/EntityFramework.psm1",
+        "tools/Redirect.VS11.config",
+        "tools/Redirect.config",
+        "tools/about_EntityFramework.help.txt",
+        "tools/init.ps1",
+        "tools/install.ps1",
+        "tools/migrate.exe"
+      ]
+    },
     "Humanizer.Core/2.8.26": {
       "sha512": "OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "type": "package",
@@ -6255,10 +6299,10 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "BuisnessLayer/1.0.0": {
+    "DALayer/1.0.0": {
       "type": "project",
-      "path": "../BuisnessLayer/BuisnessLayer.csproj",
-      "msbuildProject": "../BuisnessLayer/BuisnessLayer.csproj"
+      "path": "../DALayer/DALayer.csproj",
+      "msbuildProject": "../DALayer/DALayer.csproj"
     },
     "DataLayer/1.0.0": {
       "type": "project",
@@ -6268,7 +6312,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "BuisnessLayer >= 1.0.0",
+      "DALayer >= 1.0.0",
       "DataLayer >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.2",
@@ -6282,11 +6326,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nimap\\New folder\\COREApi\\COREAPI\\COREAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\COREAPI\\COREAPI.csproj",
       "projectName": "COREAPI",
-      "projectPath": "C:\\Users\\Nimap\\New folder\\COREApi\\COREAPI\\COREAPI.csproj",
+      "projectPath": "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\COREAPI\\COREAPI.csproj",
       "packagesPath": "C:\\Users\\Nimap\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nimap\\New folder\\COREApi\\COREAPI\\obj\\",
+      "outputPath": "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\COREAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nimap\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6303,11 +6347,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Nimap\\New folder\\COREApi\\BuisnessLayer\\BuisnessLayer.csproj": {
-              "projectPath": "C:\\Users\\Nimap\\New folder\\COREApi\\BuisnessLayer\\BuisnessLayer.csproj"
+            "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\DALayer\\DALayer.csproj": {
+              "projectPath": "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\DALayer\\DALayer.csproj"
             },
-            "C:\\Users\\Nimap\\New folder\\COREApi\\DataLayer\\DataLayer.csproj": {
-              "projectPath": "C:\\Users\\Nimap\\New folder\\COREApi\\DataLayer\\DataLayer.csproj"
+            "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\DataLayer\\DataLayer.csproj": {
+              "projectPath": "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\DataLayer\\DataLayer.csproj"
             }
           }
         }
@@ -6363,5 +6407,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'EntityFramework 5.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "EntityFramework",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "CAA8qt6roti19Tz1OZSMFt1HIGxNtMz7P9gtNnd4uwmYcdXsNOtjS7trOUJ9CCy6Xm9BnYm2LTcJ7TXrzxV4pQ==",
+  "dgSpecHash": "1uUT5ZekvoYtkRuVV21IKhz6d0SrYAU4wOcLAP0PWGc2/v1Y0rFJlMj+DblGeSPkCqCENyZH5Az42N+xTGxvYw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nimap\\New folder\\COREApi\\COREAPI\\COREAPI.csproj",
+  "projectFilePath": "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\COREAPI\\COREAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Nimap\\.nuget\\packages\\entityframework\\5.0.0\\entityframework.5.0.0.nupkg.sha512",
     "C:\\Users\\Nimap\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Nimap\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Nimap\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
@@ -108,5 +109,16 @@
     "C:\\Users\\Nimap\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Nimap\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'EntityFramework 5.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "EntityFramework",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

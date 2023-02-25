@@ -1,8 +1,6 @@
-﻿using BuisnessLayer.Services.AddBook;
-using BuisnessLayer.Services.DeleteBook;
-using BuisnessLayer.Services.GetBook;
-using BuisnessLayer.Services.UpdateBook;
-using COREAPI.DATA.ViewModel;
+﻿
+using COREAPI.DATA;
+using DALayer;
 using Microsoft.AspNetCore.Mvc;
 
 namespace COREAPI.Controllers
@@ -11,52 +9,52 @@ namespace COREAPI.Controllers
     [ApiController]
     public class BooksController : ControllerBase
     {
-        private readonly IPostBook _AddBook;
-        private readonly IGetBookById _bookdetail;
-        private readonly IUpdateBook _updateBook;
-        private readonly IDeleteBook _deleteBook;
-        public BooksController(IPostBook AddBook, IGetBookById getbookdetail, IUpdateBook updateBook, IDeleteBook deleteBook)
+
+        private readonly IRepository<Book> _repo;
+
+
+        public BooksController(IRepository<Book> repository)
         {
-            _AddBook = AddBook;
-            _bookdetail = getbookdetail;
-            _updateBook = updateBook;
-            _deleteBook = deleteBook;
+            _repo = repository;
+
+
         }
 
-
-        [HttpPost]
-        public IActionResult AddBook([FromBody] BookViewModel book)
+        [HttpPost("AddBook")]
+        public IActionResult AddBook([FromBody] Book book)
         {
-            _AddBook.AddBook(book);
+            _repo.AddBook(book);
+            _repo.Save();
             return Ok();
         }
 
         [HttpGet("GetAllBooks")]
         public IActionResult GetBook()
         {
-            var book = _bookdetail.GetAllBooks();
+            var book = _repo.GetAll();
             return Ok(book);
         }
 
-        [HttpGet]
-        [Route("getbookbyid/{id}")]
+        [HttpGet("getbookbyid/{id}")]
         public IActionResult GetBook(int id)
         {
-            var book = _bookdetail.GetBookById(id);
+            var book = _repo.GetBookById(id);
             return Ok(book);
         }
 
         [HttpPut("Updatebyid/{id}")]
-        public IActionResult UpdateBook(int id, BookViewModel book)
+        public IActionResult UpdateBook(int id, Book book)
         {
-            _updateBook.EditDetail(id, book);
+            _repo.UpdateBook(book);
+            _repo.Save();
             return Ok();
         }
 
         [HttpDelete("deletebyid/{id}")]
         public IActionResult DeleteBook(int id)
         {
-            _deleteBook.RemoveBook(id);
+            _repo.DeleteBook(id);
+            _repo.Save();
             return Ok();
         }
     }

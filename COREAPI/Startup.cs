@@ -1,8 +1,5 @@
-using BuisnessLayer.Services.AddBook;
-using BuisnessLayer.Services.DeleteBook;
-using BuisnessLayer.Services.GetBook;
-using BuisnessLayer.Services.UpdateBook;
 using COREAPI.DATA;
+using DALayer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -30,11 +27,7 @@ namespace COREAPI
             services.AddControllers();
 
             services.AddDbContext<BookDBContext>(options => options.UseSqlServer(ConnectionString));
-            services.AddTransient<IPostBook, PostBook>();
-            services.AddTransient<IGetBookById, GetBookDetails>();
-            services.AddTransient<IUpdateBook, UpdateBook>();
-            services.AddTransient<IDeleteBook, DeleteBook>();
-
+            services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "COREAPI", Version = "v1" });
@@ -52,7 +45,7 @@ namespace COREAPI
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "COREAPI v1"));
             }
-            app.UseMiddleware<ExceptionMiddleware>();
+            //app.UseMiddleware<ExceptionMiddleware>();
             app.UseHttpsRedirection();
             app.UseRouting();
             app.UseAuthorization();

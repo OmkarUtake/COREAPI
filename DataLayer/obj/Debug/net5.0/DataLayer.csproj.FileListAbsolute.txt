@@ -10,3 +10,15 @@ C:\Users\Nimap\New folder\COREAPI\DataLayer\obj\Debug\net5.0\DataLayer.dll
 C:\Users\Nimap\New folder\COREAPI\DataLayer\obj\Debug\net5.0\refint\DataLayer.dll
 C:\Users\Nimap\New folder\COREAPI\DataLayer\obj\Debug\net5.0\DataLayer.pdb
 C:\Users\Nimap\New folder\COREApi\DataLayer\obj\Debug\net5.0\ref\DataLayer.dll
+C:\Users\Nimap\Desktop\COREAPI-main\COREAPI-main\DataLayer\bin\Debug\net5.0\DataLayer.deps.json
+C:\Users\Nimap\Desktop\COREAPI-main\COREAPI-main\DataLayer\bin\Debug\net5.0\DataLayer.dll
+C:\Users\Nimap\Desktop\COREAPI-main\COREAPI-main\DataLayer\bin\Debug\net5.0\DataLayer.pdb
+C:\Users\Nimap\Desktop\COREAPI-main\COREAPI-main\DataLayer\obj\Debug\net5.0\DataLayer.csproj.AssemblyReference.cache
+C:\Users\Nimap\Desktop\COREAPI-main\COREAPI-main\DataLayer\obj\Debug\net5.0\DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nimap\Desktop\COREAPI-main\COREAPI-main\DataLayer\obj\Debug\net5.0\DataLayer.AssemblyInfoInputs.cache
+C:\Users\Nimap\Desktop\COREAPI-main\COREAPI-main\DataLayer\obj\Debug\net5.0\DataLayer.AssemblyInfo.cs
+C:\Users\Nimap\Desktop\COREAPI-main\COREAPI-main\DataLayer\obj\Debug\net5.0\DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\Nimap\Desktop\COREAPI-main\COREAPI-main\DataLayer\obj\Debug\net5.0\DataLayer.dll
+C:\Users\Nimap\Desktop\COREAPI-main\COREAPI-main\DataLayer\obj\Debug\net5.0\refint\DataLayer.dll
+C:\Users\Nimap\Desktop\COREAPI-main\COREAPI-main\DataLayer\obj\Debug\net5.0\DataLayer.pdb
+C:\Users\Nimap\Desktop\COREAPI-main\COREAPI-main\DataLayer\obj\Debug\net5.0\ref\DataLayer.dll
