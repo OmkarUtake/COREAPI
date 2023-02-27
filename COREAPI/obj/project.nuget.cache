@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "62/Y0iGOwp3M4TddO7hQ+uN285K8OW2xk9zXvNl+MfzpTMXDtoWa4ahHLzu/m/YbfO7a7Ukz23ooTYedDtXM9Q==",
+  "dgSpecHash": "Xjp06xWeA9jW8vowCvPF+7Dyig0lSKLKcJnGL2U1BgUYhTI17f6gVzHhWb+D2S2miimAE1mLIZbpiQXnJee+vw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nimap\\New folder\\COREAPI\\COREAPI\\COREAPI.csproj",
+  "projectFilePath": "C:\\Users\\Nimap\\New folder\\COREAPI\\COREAPI\\CORE.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nimap\\.nuget\\packages\\entityframework\\5.0.0\\entityframework.5.0.0.nupkg.sha512",
     "C:\\Users\\Nimap\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

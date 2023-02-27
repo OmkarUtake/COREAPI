@@ -29,8 +29,6 @@ namespace COREAPI
         {
             services.AddControllers();
             services.AddDbContext<BookDBContext>(options => options.UseSqlServer(ConnectionString));
-            //services.AddScoped(typeof(IBookRepository<Book>), typeof(Repository<Book>));
-
             services.AddTransient<IBookService, BookService>();
             services.AddTransient<IBookRepository, BookRepository>();
             services.AddSwaggerGen(c =>

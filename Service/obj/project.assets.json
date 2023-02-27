@@ -665,9 +665,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nimap\\New folder\\COREAPI\\Service\\Core.Services.csproj",
-      "projectName": "Core.Services",
-      "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\Service\\Core.Services.csproj",
+      "projectUniqueName": "C:\\Users\\Nimap\\New folder\\COREAPI\\Service\\CORE.Service.csproj",
+      "projectName": "CORE.Service",
+      "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\Service\\CORE.Service.csproj",
       "packagesPath": "C:\\Users\\Nimap\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\Service\\obj\\",
       "projectStyle": "PackageReference",

@@ -1895,7 +1895,7 @@
           "bin/placeholder/CORE.Model.dll": {}
         }
       },
-      "Core.Services/1.0.0": {
+      "CORE.Service/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
@@ -1903,10 +1903,10 @@
           "CORE.Model": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Core.Services.dll": {}
+          "bin/placeholder/CORE.Service.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Core.Services.dll": {}
+          "bin/placeholder/CORE.Service.dll": {}
         }
       }
     }
@@ -6323,17 +6323,17 @@
       "path": "../DataLayer/CORE.Model.csproj",
       "msbuildProject": "../DataLayer/CORE.Model.csproj"
     },
-    "Core.Services/1.0.0": {
+    "CORE.Service/1.0.0": {
       "type": "project",
-      "path": "../Service/Core.Services.csproj",
-      "msbuildProject": "../Service/Core.Services.csproj"
+      "path": "../Service/CORE.Service.csproj",
+      "msbuildProject": "../Service/CORE.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "CORE.Database >= 1.0.0",
       "CORE.Model >= 1.0.0",
-      "Core.Services >= 1.0.0",
+      "CORE.Service >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.2",
@@ -6346,9 +6346,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nimap\\New folder\\COREAPI\\COREAPI\\COREAPI.csproj",
-      "projectName": "COREAPI",
-      "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\COREAPI\\COREAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Nimap\\New folder\\COREAPI\\COREAPI\\CORE.Api.csproj",
+      "projectName": "CORE.Api",
+      "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\COREAPI\\CORE.Api.csproj",
       "packagesPath": "C:\\Users\\Nimap\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\COREAPI\\obj\\",
       "projectStyle": "PackageReference",
@@ -6373,8 +6373,8 @@
             "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\CORE.Model.csproj": {
               "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\CORE.Model.csproj"
             },
-            "C:\\Users\\Nimap\\New folder\\COREAPI\\Service\\Core.Services.csproj": {
-              "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\Service\\Core.Services.csproj"
+            "C:\\Users\\Nimap\\New folder\\COREAPI\\Service\\CORE.Service.csproj": {
+              "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\Service\\CORE.Service.csproj"
             }
           }
         }

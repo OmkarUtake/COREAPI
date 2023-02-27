@@ -13,7 +13,5 @@ namespace DALayer.IRepository
         void Add(T book);
         void Delete(int id);
         void Update(int id, T model);
-        
-
     }
 }

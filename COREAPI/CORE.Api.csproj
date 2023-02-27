@@ -17,7 +17,7 @@
   <ItemGroup>
     <ProjectReference Include="..\DALayer\CORE.Database.csproj" />
     <ProjectReference Include="..\DataLayer\CORE.Model.csproj" />
-    <ProjectReference Include="..\Service\Core.Services.csproj" />
+    <ProjectReference Include="..\Service\CORE.Service.csproj" />
   </ItemGroup>
 
 </Project>

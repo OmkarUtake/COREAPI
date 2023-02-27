@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j/9NzTbT2tzqWwLvZl7ySWD3IBfEIJ9vxZ8ZtdcXXlsVavTavrpSEmqh7bALZCaSBwcCfeZTzumoBgbri5Sywg==",
+  "dgSpecHash": "cLnA2RuJbQ1z+l005JZDSdgXXZ1QEC9uEIrmMarVAIpM8NgXBJpahv1QuDhaDv61vVjA1C5eqZEMumbnFP+uNw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nimap\\New folder\\COREAPI\\Service\\Core.Services.csproj",
+  "projectFilePath": "C:\\Users\\Nimap\\New folder\\COREAPI\\Service\\CORE.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nimap\\.nuget\\packages\\entityframework\\5.0.0\\entityframework.5.0.0.nupkg.sha512",
     "C:\\Users\\Nimap\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.2\\microsoft.entityframeworkcore.5.0.2.nupkg.sha512",

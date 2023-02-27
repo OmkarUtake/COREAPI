@@ -1,11 +1,8 @@
 ﻿
 using COREAPI.DATA;
 using DALayer.IRepository;
-using DALayer.Repository;
 using Microsoft.AspNetCore.Mvc;
-using Service.IService;
 using System;
-using System.Globalization;
 
 namespace COREAPI.Controllers
 {
