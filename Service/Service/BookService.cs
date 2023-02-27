@@ -1,5 +1,5 @@
 ﻿using COREAPI.DATA;
-using DALayer;
+using DALayer.IRepository;
 using Service.IService;
 using System;
 using System.Collections.Generic;
@@ -11,8 +11,8 @@ namespace Service.Service
 {
     public class BookService : IBookService
     {
-        private readonly IBookRepository<Book> _repo;
-        public BookService(IBookRepository<Book> repo)
+        private readonly IBookRepository _repo;
+        public BookService(IBookRepository repo)
         {
             _repo = repo;
         }
@@ -23,25 +23,31 @@ namespace Service.Service
         }
         public void AddBook(Book book)
         {
-            _repo.AddBook(book);
-            _repo.Save();
+            _repo.Add(book);
+
         }
 
         public void DeleteBook(int id)
         {
-            _repo.DeleteBook(id);
-            _repo.Save();
+            _repo.Delete(id);
+
         }
 
         public Book GetBookById(int id)
         {
-            return _repo.GetBookById(id);
+            return _repo.GetById(id);
         }
 
         public void UpdateBook(int id, Book book)
         {
-            _repo.UpdateBook(id, book);
-            _repo.Save();
+            _repo.Update(id, book);
+
+        }
+
+        public Book SearchByName(string name)
+        {
+            var book = _repo.SearchBookByName(name);
+            return book;
         }
     }
 }

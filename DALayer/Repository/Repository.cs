@@ -1,33 +1,33 @@
 ﻿using COREAPI.DATA;
+using DALayer.IRepository;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DALayer
 {
-    public class BookRepository<T> : IBookRepository<T> where T : class
+    public class Repository<T> : IRepository<T> where T : class
     {
         private readonly BookDBContext _db;
         private readonly DbSet<T> _dbSet;
 
-        public BookRepository(BookDBContext db)
+        public Repository(BookDBContext db)
         {
             _db = db;
             _dbSet = _db.Set<T>();
         }
 
-        public void AddBook(T book)
+        public void Add(T book)
         {
             _dbSet.Add(book);
+            _db.SaveChanges();
         }
 
-        public void DeleteBook(int id)
+        public void Delete(int id)
         {
             T model = _dbSet.Find(id);
             _dbSet.Remove(model);
+            _db.SaveChanges();
         }
 
         public IEnumerable<T> GetAll()
@@ -35,20 +35,18 @@ namespace DALayer
             return _dbSet.AsEnumerable();
         }
 
-        public T GetBookById(int id)
+        public T GetById(int id)
         {
             var model = _dbSet.Find(id);
             return model;
         }
 
-        public void UpdateBook(int id, T model)
+        public void Update(int id, T model)
         {
             _dbSet.Update(model);
-        }
-
-        public void Save()
-        {
             _db.SaveChanges();
         }
+
+       
     }
 }

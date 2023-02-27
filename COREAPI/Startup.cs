@@ -1,5 +1,6 @@
 using COREAPI.DATA;
-using DALayer;
+using DALayer.IRepository;
+using DALayer.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -27,10 +28,11 @@ namespace COREAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-
             services.AddDbContext<BookDBContext>(options => options.UseSqlServer(ConnectionString));
-            services.AddTransient(typeof(IBookRepository<Book>), typeof(BookRepository<Book>));
+            //services.AddScoped(typeof(IBookRepository<Book>), typeof(Repository<Book>));
+
             services.AddTransient<IBookService, BookService>();
+            services.AddTransient<IBookRepository, BookRepository>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "COREAPI", Version = "v1" });
@@ -40,24 +42,19 @@ namespace COREAPI
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-
-
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "COREAPI v1"));
             }
-            //app.UseMiddleware<ExceptionMiddleware>();
             app.UseHttpsRedirection();
             app.UseRouting();
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
-                    {
-                        endpoints.MapControllers();
-                    });
+                             {
+                                 endpoints.MapControllers();
+                             });
         }
-
-
     }
 }
