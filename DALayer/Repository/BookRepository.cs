@@ -1,6 +1,7 @@
 ﻿using COREAPI.DATA;
 using DALayer.IRepository;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace DALayer.Repository
@@ -15,9 +16,9 @@ namespace DALayer.Repository
             _dbSet = _db.Set<Book>();
         }
 
-        public Book SearchBookByName(string name)
+        public List<Book> SearchBookByName(string name)
         {
-            var model = _db.Books.Where(x => x.Title == name).FirstOrDefault();
+            var model = _db.Books.Where(x => x.Title == name).ToList();
             return model;
         }
     }

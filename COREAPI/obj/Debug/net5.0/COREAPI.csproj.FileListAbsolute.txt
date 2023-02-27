@@ -134,9 +134,9 @@ C:\Users\Nimap\Desktop\COREAPI-main\COREAPI-main\COREAPI\bin\Debug\net5.0\DALaye
 C:\Users\Nimap\Desktop\COREAPI-main\COREAPI-main\COREAPI\bin\Debug\net5.0\DALayer.pdb
 C:\Users\Nimap\Desktop\COREAPI-main\COREAPI-main\COREAPI\bin\Debug\net5.0\EntityFramework.dll
 C:\Users\Nimap\New folder\COREAPI\COREAPI\bin\Debug\net5.0\EntityFramework.dll
-C:\Users\Nimap\New folder\COREAPI\COREAPI\bin\Debug\net5.0\DALayer.dll
-C:\Users\Nimap\New folder\COREAPI\COREAPI\bin\Debug\net5.0\DALayer.pdb
-C:\Users\Nimap\New folder\COREAPI\COREAPI\bin\Debug\net5.0\Service.dll
-C:\Users\Nimap\New folder\COREAPI\COREAPI\bin\Debug\net5.0\Service.pdb
-C:\Users\Nimap\New folder\COREAPI\COREAPI\bin\Debug\net5.0\DataModel.dll
-C:\Users\Nimap\New folder\COREAPI\COREAPI\bin\Debug\net5.0\DataModel.pdb
+C:\Users\Nimap\New folder\COREAPI\COREAPI\bin\Debug\net5.0\CORE.Database.dll
+C:\Users\Nimap\New folder\COREAPI\COREAPI\bin\Debug\net5.0\CORE.Model.dll
+C:\Users\Nimap\New folder\COREAPI\COREAPI\bin\Debug\net5.0\Core.Services.dll
+C:\Users\Nimap\New folder\COREAPI\COREAPI\bin\Debug\net5.0\CORE.Database.pdb
+C:\Users\Nimap\New folder\COREAPI\COREAPI\bin\Debug\net5.0\CORE.Model.pdb
+C:\Users\Nimap\New folder\COREAPI\COREAPI\bin\Debug\net5.0\Core.Services.pdb

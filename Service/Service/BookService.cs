@@ -24,13 +24,11 @@ namespace Service.Service
         public void AddBook(Book book)
         {
             _repo.Add(book);
-
         }
 
         public void DeleteBook(int id)
         {
             _repo.Delete(id);
-
         }
 
         public Book GetBookById(int id)
@@ -41,12 +39,11 @@ namespace Service.Service
         public void UpdateBook(int id, Book book)
         {
             _repo.Update(id, book);
-
         }
 
-        public Book SearchByName(string name)
+        public List<Book> SearchByName(string name)
         {
-            var book = _repo.SearchBookByName(name);
+            List<Book> book = _repo.SearchBookByName(name);
             return book;
         }
     }

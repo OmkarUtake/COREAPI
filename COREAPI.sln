@@ -5,11 +5,11 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "COREAPI", "COREAPI\COREAPI.csproj", "{F5927714-6171-49E9-9181-3FFF8F2AE816}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataModel", "DataLayer\DataModel.csproj", "{F6928EAA-CEEA-4DA8-AE6E-382472A9F48B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CORE.Model", "DataLayer\CORE.Model.csproj", "{F6928EAA-CEEA-4DA8-AE6E-382472A9F48B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DALayer", "DALayer\DALayer.csproj", "{D84A9455-A080-42CE-80DB-F4DA61BA69A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CORE.Database", "DALayer\CORE.Database.csproj", "{D84A9455-A080-42CE-80DB-F4DA61BA69A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{80EB0904-4E37-426A-A5AF-BAE90BA55A99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Services", "Service\Core.Services.csproj", "{80EB0904-4E37-426A-A5AF-BAE90BA55A99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

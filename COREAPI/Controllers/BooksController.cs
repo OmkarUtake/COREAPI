@@ -26,7 +26,6 @@ namespace COREAPI.Controllers
         public IActionResult AddBook([FromBody] Book book)
         {
             _bookservice.Add(book);
-            // _bookservice.AddBook(book);
             return Ok();
         }
 

@@ -226,32 +226,32 @@
           }
         }
       },
-      "DALayer/1.0.0": {
+      "CORE.Database/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "DataModel": "1.0.0",
+          "CORE.Model": "1.0.0",
           "EntityFramework": "5.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.2"
         },
         "compile": {
-          "bin/placeholder/DALayer.dll": {}
+          "bin/placeholder/CORE.Database.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DALayer.dll": {}
+          "bin/placeholder/CORE.Database.dll": {}
         }
       },
-      "DataModel/1.0.0": {
+      "CORE.Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.2"
         },
         "compile": {
-          "bin/placeholder/DataModel.dll": {}
+          "bin/placeholder/CORE.Model.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DataModel.dll": {}
+          "bin/placeholder/CORE.Model.dll": {}
         }
       }
     }
@@ -642,21 +642,21 @@
         "version.txt"
       ]
     },
-    "DALayer/1.0.0": {
+    "CORE.Database/1.0.0": {
       "type": "project",
-      "path": "../DALayer/DALayer.csproj",
-      "msbuildProject": "../DALayer/DALayer.csproj"
+      "path": "../DALayer/CORE.Database.csproj",
+      "msbuildProject": "../DALayer/CORE.Database.csproj"
     },
-    "DataModel/1.0.0": {
+    "CORE.Model/1.0.0": {
       "type": "project",
-      "path": "../DataLayer/DataModel.csproj",
-      "msbuildProject": "../DataLayer/DataModel.csproj"
+      "path": "../DataLayer/CORE.Model.csproj",
+      "msbuildProject": "../DataLayer/CORE.Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "DALayer >= 1.0.0",
-      "DataModel >= 1.0.0"
+      "CORE.Database >= 1.0.0",
+      "CORE.Model >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -665,9 +665,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nimap\\New folder\\COREAPI\\Service\\Service.csproj",
-      "projectName": "Service",
-      "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\Service\\Service.csproj",
+      "projectUniqueName": "C:\\Users\\Nimap\\New folder\\COREAPI\\Service\\Core.Services.csproj",
+      "projectName": "Core.Services",
+      "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\Service\\Core.Services.csproj",
       "packagesPath": "C:\\Users\\Nimap\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\Service\\obj\\",
       "projectStyle": "PackageReference",
@@ -686,11 +686,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Nimap\\New folder\\COREAPI\\DALayer\\DALayer.csproj": {
-              "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DALayer\\DALayer.csproj"
+            "C:\\Users\\Nimap\\New folder\\COREAPI\\DALayer\\CORE.Database.csproj": {
+              "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DALayer\\CORE.Database.csproj"
             },
-            "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\DataModel.csproj": {
-              "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\DataModel.csproj"
+            "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\CORE.Model.csproj": {
+              "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\CORE.Model.csproj"
             }
           }
         }

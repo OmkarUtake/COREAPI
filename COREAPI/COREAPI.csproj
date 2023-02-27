@@ -15,9 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DALayer\DALayer.csproj" />
-    <ProjectReference Include="..\DataLayer\DataModel.csproj" />
-    <ProjectReference Include="..\Service\Service.csproj" />
+    <ProjectReference Include="..\DALayer\CORE.Database.csproj" />
+    <ProjectReference Include="..\DataLayer\CORE.Model.csproj" />
+    <ProjectReference Include="..\Service\Core.Services.csproj" />
   </ItemGroup>
 
 </Project>

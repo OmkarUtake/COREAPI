@@ -12,7 +12,7 @@ namespace Service.IService
         IEnumerable<Book> GetAllBooks();
         void AddBook(Book book);
         Book GetBookById(int id);
-        void UpdateBook(int id,Book book);
+        void UpdateBook(int id, Book book);
         void DeleteBook(int id);
     }
 }

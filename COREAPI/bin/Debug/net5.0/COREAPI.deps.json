@@ -33,12 +33,12 @@
     ".NETCoreApp,Version=v5.0": {
       "COREAPI/1.0.0": {
         "dependencies": {
-          "DALayer": "1.0.0",
-          "DataModel": "1.0.0",
+          "CORE.Database": "1.0.0",
+          "CORE.Model": "1.0.0",
+          "Core.Services": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.2",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.2",
-          "Service": "1.0.0",
           "Swashbuckle.AspNetCore": "5.6.3",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
@@ -1387,40 +1387,40 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
-      "DALayer/1.0.0": {
+      "CORE.Database/1.0.0": {
         "dependencies": {
-          "DataModel": "1.0.0",
+          "CORE.Model": "1.0.0",
           "EntityFramework": "5.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.2"
         },
         "runtime": {
-          "DALayer.dll": {}
+          "CORE.Database.dll": {}
         },
         "compile": {
-          "DALayer.dll": {}
+          "CORE.Database.dll": {}
         }
       },
-      "DataModel/1.0.0": {
+      "CORE.Model/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.2"
         },
         "runtime": {
-          "DataModel.dll": {}
+          "CORE.Model.dll": {}
         },
         "compile": {
-          "DataModel.dll": {}
+          "CORE.Model.dll": {}
         }
       },
-      "Service/1.0.0": {
+      "Core.Services/1.0.0": {
         "dependencies": {
-          "DALayer": "1.0.0",
-          "DataModel": "1.0.0"
+          "CORE.Database": "1.0.0",
+          "CORE.Model": "1.0.0"
         },
         "runtime": {
-          "Service.dll": {}
+          "Core.Services.dll": {}
         },
         "compile": {
-          "Service.dll": {}
+          "Core.Services.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -3845,17 +3845,17 @@
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
-    "DALayer/1.0.0": {
+    "CORE.Database/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "DataModel/1.0.0": {
+    "CORE.Model/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Service/1.0.0": {
+    "Core.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
