@@ -226,17 +226,17 @@
           }
         }
       },
-      "DataLayer/1.0.0": {
+      "DataModel/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.2"
         },
         "compile": {
-          "bin/placeholder/DataLayer.dll": {}
+          "bin/placeholder/DataModel.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DataLayer.dll": {}
+          "bin/placeholder/DataModel.dll": {}
         }
       }
     }
@@ -627,15 +627,15 @@
         "version.txt"
       ]
     },
-    "DataLayer/1.0.0": {
+    "DataModel/1.0.0": {
       "type": "project",
-      "path": "../DataLayer/DataLayer.csproj",
-      "msbuildProject": "../DataLayer/DataLayer.csproj"
+      "path": "../DataLayer/DataModel.csproj",
+      "msbuildProject": "../DataLayer/DataModel.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "DataLayer >= 1.0.0",
+      "DataModel >= 1.0.0",
       "EntityFramework >= 5.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.2"
     ]
@@ -646,11 +646,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\DALayer\\DALayer.csproj",
+      "projectUniqueName": "C:\\Users\\Nimap\\New folder\\COREAPI\\DALayer\\DALayer.csproj",
       "projectName": "DALayer",
-      "projectPath": "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\DALayer\\DALayer.csproj",
+      "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DALayer\\DALayer.csproj",
       "packagesPath": "C:\\Users\\Nimap\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\DALayer\\obj\\",
+      "outputPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DALayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nimap\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -667,8 +667,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\DataLayer\\DataLayer.csproj": {
-              "projectPath": "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\DataLayer\\DataLayer.csproj"
+            "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\DataModel.csproj": {
+              "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\DataModel.csproj"
             }
           }
         }

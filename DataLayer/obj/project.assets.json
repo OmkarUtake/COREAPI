@@ -584,11 +584,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\DataLayer\\DataLayer.csproj",
-      "projectName": "DataLayer",
-      "projectPath": "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\DataLayer\\DataLayer.csproj",
+      "projectUniqueName": "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\DataModel.csproj",
+      "projectName": "DataModel",
+      "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\DataModel.csproj",
       "packagesPath": "C:\\Users\\Nimap\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\DataLayer\\obj\\",
+      "outputPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nimap\\AppData\\Roaming\\NuGet\\NuGet.Config",

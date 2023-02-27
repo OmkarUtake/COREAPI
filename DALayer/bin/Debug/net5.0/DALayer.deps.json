@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v5.0": {
       "DALayer/1.0.0": {
         "dependencies": {
-          "DataLayer": "1.0.0",
+          "DataModel": "1.0.0",
           "EntityFramework": "5.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.2"
         },
@@ -148,12 +148,12 @@
           }
         }
       },
-      "DataLayer/1.0.0": {
+      "DataModel/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.2"
         },
         "runtime": {
-          "DataLayer.dll": {}
+          "DataModel.dll": {}
         }
       }
     }
@@ -269,7 +269,7 @@
       "path": "system.diagnostics.diagnosticsource/5.0.1",
       "hashPath": "system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"
     },
-    "DataLayer/1.0.0": {
+    "DataModel/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

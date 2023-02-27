@@ -1,0 +1,17 @@
+C:\Users\Nimap\New folder\COREAPI\Service\bin\Debug\net5.0\Service.deps.json
+C:\Users\Nimap\New folder\COREAPI\Service\bin\Debug\net5.0\Service.dll
+C:\Users\Nimap\New folder\COREAPI\Service\bin\Debug\net5.0\Service.pdb
+C:\Users\Nimap\New folder\COREAPI\Service\bin\Debug\net5.0\DALayer.dll
+C:\Users\Nimap\New folder\COREAPI\Service\bin\Debug\net5.0\DALayer.pdb
+C:\Users\Nimap\New folder\COREAPI\Service\obj\Debug\net5.0\Service.csproj.AssemblyReference.cache
+C:\Users\Nimap\New folder\COREAPI\Service\obj\Debug\net5.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nimap\New folder\COREAPI\Service\obj\Debug\net5.0\Service.AssemblyInfoInputs.cache
+C:\Users\Nimap\New folder\COREAPI\Service\obj\Debug\net5.0\Service.AssemblyInfo.cs
+C:\Users\Nimap\New folder\COREAPI\Service\obj\Debug\net5.0\Service.csproj.CoreCompileInputs.cache
+C:\Users\Nimap\New folder\COREAPI\Service\obj\Debug\net5.0\Service.csproj.CopyComplete
+C:\Users\Nimap\New folder\COREAPI\Service\obj\Debug\net5.0\Service.dll
+C:\Users\Nimap\New folder\COREAPI\Service\obj\Debug\net5.0\refint\Service.dll
+C:\Users\Nimap\New folder\COREAPI\Service\obj\Debug\net5.0\Service.pdb
+C:\Users\Nimap\New folder\COREAPI\Service\obj\Debug\net5.0\ref\Service.dll
+C:\Users\Nimap\New folder\COREAPI\Service\bin\Debug\net5.0\DataModel.dll
+C:\Users\Nimap\New folder\COREAPI\Service\bin\Debug\net5.0\DataModel.pdb

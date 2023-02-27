@@ -2,6 +2,7 @@
 using COREAPI.DATA;
 using DALayer;
 using Microsoft.AspNetCore.Mvc;
+using Service.IService;
 
 namespace COREAPI.Controllers
 {
@@ -10,51 +11,46 @@ namespace COREAPI.Controllers
     public class BooksController : ControllerBase
     {
 
-        private readonly IRepository<Book> _repo;
+        private readonly IBookService _bookservice;
 
 
-        public BooksController(IRepository<Book> repository)
+        public BooksController(IBookService bookService)
         {
-            _repo = repository;
-
-
+            _bookservice = bookService;
         }
 
-        [HttpPost("AddBook")]
+        [HttpPost("AddNew")]
         public IActionResult AddBook([FromBody] Book book)
         {
-            _repo.AddBook(book);
-            _repo.Save();
+            _bookservice.AddBook(book);
             return Ok();
         }
 
-        [HttpGet("GetAllBooks")]
+        [HttpGet("GetAll")]
         public IActionResult GetBook()
         {
-            var book = _repo.GetAll();
+            var book = _bookservice.GetAllBooks();
             return Ok(book);
         }
 
-        [HttpGet("getbookbyid/{id}")]
+        [HttpGet("GetById/{id}")]
         public IActionResult GetBook(int id)
         {
-            var book = _repo.GetBookById(id);
+            var book = _bookservice.GetBookById(id);
             return Ok(book);
         }
 
-        [HttpPut("Updatebyid/{id}")]
+        [HttpPut("UpdateById/{id}")]
         public IActionResult UpdateBook(int id, Book book)
         {
-            _repo.UpdateBook(book);
-            _repo.Save();
+            _bookservice.UpdateBook(id, book);
             return Ok();
         }
 
-        [HttpDelete("deletebyid/{id}")]
+        [HttpDelete("DeleteById/{id}")]
         public IActionResult DeleteBook(int id)
         {
-            _repo.DeleteBook(id);
-            _repo.Save();
+            _bookservice.DeleteBook(id);
             return Ok();
         }
     }

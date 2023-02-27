@@ -13,3 +13,18 @@ C:\Users\Nimap\Desktop\COREAPI-main\COREAPI-main\DALayer\obj\Debug\net5.0\DALaye
 C:\Users\Nimap\Desktop\COREAPI-main\COREAPI-main\DALayer\obj\Debug\net5.0\refint\DALayer.dll
 C:\Users\Nimap\Desktop\COREAPI-main\COREAPI-main\DALayer\obj\Debug\net5.0\DALayer.pdb
 C:\Users\Nimap\Desktop\COREAPI-main\COREAPI-main\DALayer\obj\Debug\net5.0\ref\DALayer.dll
+C:\Users\Nimap\New folder\COREAPI\DALayer\bin\Debug\net5.0\DALayer.deps.json
+C:\Users\Nimap\New folder\COREAPI\DALayer\bin\Debug\net5.0\DALayer.dll
+C:\Users\Nimap\New folder\COREAPI\DALayer\bin\Debug\net5.0\DALayer.pdb
+C:\Users\Nimap\New folder\COREAPI\DALayer\obj\Debug\net5.0\DALayer.csproj.AssemblyReference.cache
+C:\Users\Nimap\New folder\COREAPI\DALayer\obj\Debug\net5.0\DALayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nimap\New folder\COREAPI\DALayer\obj\Debug\net5.0\DALayer.AssemblyInfoInputs.cache
+C:\Users\Nimap\New folder\COREAPI\DALayer\obj\Debug\net5.0\DALayer.AssemblyInfo.cs
+C:\Users\Nimap\New folder\COREAPI\DALayer\obj\Debug\net5.0\DALayer.csproj.CoreCompileInputs.cache
+C:\Users\Nimap\New folder\COREAPI\DALayer\obj\Debug\net5.0\DALayer.csproj.CopyComplete
+C:\Users\Nimap\New folder\COREAPI\DALayer\obj\Debug\net5.0\DALayer.dll
+C:\Users\Nimap\New folder\COREAPI\DALayer\obj\Debug\net5.0\refint\DALayer.dll
+C:\Users\Nimap\New folder\COREAPI\DALayer\obj\Debug\net5.0\DALayer.pdb
+C:\Users\Nimap\New folder\COREAPI\DALayer\obj\Debug\net5.0\ref\DALayer.dll
+C:\Users\Nimap\New folder\COREAPI\DALayer\bin\Debug\net5.0\DataModel.dll
+C:\Users\Nimap\New folder\COREAPI\DALayer\bin\Debug\net5.0\DataModel.pdb

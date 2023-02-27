@@ -1871,7 +1871,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "DataLayer": "1.0.0",
+          "DataModel": "1.0.0",
           "EntityFramework": "5.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.2"
         },
@@ -1882,17 +1882,31 @@
           "bin/placeholder/DALayer.dll": {}
         }
       },
-      "DataLayer/1.0.0": {
+      "DataModel/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.2"
         },
         "compile": {
-          "bin/placeholder/DataLayer.dll": {}
+          "bin/placeholder/DataModel.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DataLayer.dll": {}
+          "bin/placeholder/DataModel.dll": {}
+        }
+      },
+      "Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "DALayer": "1.0.0",
+          "DataModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Service.dll": {}
         }
       }
     }
@@ -6304,19 +6318,25 @@
       "path": "../DALayer/DALayer.csproj",
       "msbuildProject": "../DALayer/DALayer.csproj"
     },
-    "DataLayer/1.0.0": {
+    "DataModel/1.0.0": {
       "type": "project",
-      "path": "../DataLayer/DataLayer.csproj",
-      "msbuildProject": "../DataLayer/DataLayer.csproj"
+      "path": "../DataLayer/DataModel.csproj",
+      "msbuildProject": "../DataLayer/DataModel.csproj"
+    },
+    "Service/1.0.0": {
+      "type": "project",
+      "path": "../Service/Service.csproj",
+      "msbuildProject": "../Service/Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "DALayer >= 1.0.0",
-      "DataLayer >= 1.0.0",
+      "DataModel >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.2",
+      "Service >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -6326,11 +6346,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\COREAPI\\COREAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Nimap\\New folder\\COREAPI\\COREAPI\\COREAPI.csproj",
       "projectName": "COREAPI",
-      "projectPath": "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\COREAPI\\COREAPI.csproj",
+      "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\COREAPI\\COREAPI.csproj",
       "packagesPath": "C:\\Users\\Nimap\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\COREAPI\\obj\\",
+      "outputPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\COREAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nimap\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6347,11 +6367,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\DALayer\\DALayer.csproj": {
-              "projectPath": "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\DALayer\\DALayer.csproj"
+            "C:\\Users\\Nimap\\New folder\\COREAPI\\DALayer\\DALayer.csproj": {
+              "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DALayer\\DALayer.csproj"
             },
-            "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\DataLayer\\DataLayer.csproj": {
-              "projectPath": "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\DataLayer\\DataLayer.csproj"
+            "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\DataModel.csproj": {
+              "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\DataModel.csproj"
+            },
+            "C:\\Users\\Nimap\\New folder\\COREAPI\\Service\\Service.csproj": {
+              "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\Service\\Service.csproj"
             }
           }
         }

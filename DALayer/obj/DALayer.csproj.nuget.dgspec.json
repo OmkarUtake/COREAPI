@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\DALayer\\DALayer.csproj": {}
+    "C:\\Users\\Nimap\\New folder\\COREAPI\\DALayer\\DALayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\DALayer\\DALayer.csproj": {
+    "C:\\Users\\Nimap\\New folder\\COREAPI\\DALayer\\DALayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\DALayer\\DALayer.csproj",
+        "projectUniqueName": "C:\\Users\\Nimap\\New folder\\COREAPI\\DALayer\\DALayer.csproj",
         "projectName": "DALayer",
-        "projectPath": "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\DALayer\\DALayer.csproj",
+        "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DALayer\\DALayer.csproj",
         "packagesPath": "C:\\Users\\Nimap\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\DALayer\\obj\\",
+        "outputPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DALayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nimap\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\DataLayer\\DataLayer.csproj": {
-                "projectPath": "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\DataLayer\\DataLayer.csproj"
+              "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\DataModel.csproj": {
+                "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\DataModel.csproj"
               }
             }
           }
@@ -73,14 +73,14 @@
         }
       }
     },
-    "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\DataLayer\\DataLayer.csproj": {
+    "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\DataModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\DataLayer\\DataLayer.csproj",
-        "projectName": "DataLayer",
-        "projectPath": "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\DataLayer\\DataLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\DataModel.csproj",
+        "projectName": "DataModel",
+        "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\DataModel.csproj",
         "packagesPath": "C:\\Users\\Nimap\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\DataLayer\\obj\\",
+        "outputPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nimap\\AppData\\Roaming\\NuGet\\NuGet.Config",

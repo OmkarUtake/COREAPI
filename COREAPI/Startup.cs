@@ -7,6 +7,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Service.IService;
+using Service.Service;
 
 namespace COREAPI
 {
@@ -27,7 +29,8 @@ namespace COREAPI
             services.AddControllers();
 
             services.AddDbContext<BookDBContext>(options => options.UseSqlServer(ConnectionString));
-            services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
+            services.AddTransient(typeof(IBookRepository<Book>), typeof(BookRepository<Book>));
+            services.AddTransient<IBookService, BookService>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "COREAPI", Version = "v1" });

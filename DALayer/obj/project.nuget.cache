@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CMmciVKsqosR+8sjsK5NmAqIjKBM2vQ5pGRpGAhH3Ghx56HtJvF8tqe+H4l28vWsQIqCAMNjIv6zxavu518thw==",
+  "dgSpecHash": "v57jHedlxgpkGyWe9YJ5f93BtoEWz9nfnW8sCaLAQ6gO6J74SfetptxIyzX/zdxzMpmcaOsTqxh52J3BURVgUA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nimap\\Desktop\\COREAPI-main\\COREAPI-main\\DALayer\\DALayer.csproj",
+  "projectFilePath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DALayer\\DALayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nimap\\.nuget\\packages\\entityframework\\5.0.0\\entityframework.5.0.0.nupkg.sha512",
     "C:\\Users\\Nimap\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.2\\microsoft.entityframeworkcore.5.0.2.nupkg.sha512",
