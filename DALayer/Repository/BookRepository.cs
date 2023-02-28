@@ -9,11 +9,10 @@ namespace DALayer.Repository
     public class BookRepository : Repository<Book>, IBookRepository
     {
         private readonly BookDBContext _db;
-        private readonly DbSet<Book> _dbSet;
+
         public BookRepository(BookDBContext db) : base(db)
         {
             _db = db;
-            _dbSet = _db.Set<Book>();
         }
 
         public List<Book> SearchBookByName(string name)

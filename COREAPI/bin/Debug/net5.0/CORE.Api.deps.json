@@ -1391,7 +1391,8 @@
         "dependencies": {
           "CORE.Model": "1.0.0",
           "EntityFramework": "5.0.0",
-          "Microsoft.EntityFrameworkCore": "5.0.2"
+          "Microsoft.EntityFrameworkCore": "5.0.2",
+          "Microsoft.EntityFrameworkCore.Relational": "5.0.2"
         },
         "runtime": {
           "CORE.Database.dll": {}

@@ -34,10 +34,10 @@ namespace COREAPI.Controllers
         }
 
         [HttpGet("GetById/{id}")]
-        public IActionResult GetBook(int id)
+        public IActionResult GetBookById(int id)
         {
-            var book = _bookservice.GetById(id);
-            return Ok(book);
+            var nBook = _bookservice.GetById(x => x.Id == id);
+            return Ok(nBook);
         }
 
         [HttpPut("UpdateById/{id}")]
@@ -50,12 +50,11 @@ namespace COREAPI.Controllers
         [HttpDelete("DeleteById/{id}")]
         public IActionResult DeleteBook(int id)
         {
-            _bookservice.Delete(id);
+            _bookservice.Delete(x => x.Id == id);
             return Ok();
         }
 
-
-        [HttpGet("SearchById/{name}")]
+        [HttpGet("SearchByName/{name}")]
         public IActionResult SearchByName(String name)
         {
             var book = _bookservice.SearchBookByName(name);

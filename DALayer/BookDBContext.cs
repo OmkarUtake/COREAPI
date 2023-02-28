@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CORE.Model.Model;
+using Microsoft.EntityFrameworkCore;
 
 namespace COREAPI.DATA
 {
@@ -9,5 +10,6 @@ namespace COREAPI.DATA
 
         }
         public DbSet<Book> Books { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }

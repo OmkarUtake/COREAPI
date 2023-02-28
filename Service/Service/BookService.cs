@@ -1,7 +1,9 @@
 ﻿using COREAPI.DATA;
 using DALayer.IRepository;
 using Service.IService;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Service.Service
 {
@@ -13,7 +15,7 @@ namespace Service.Service
             _repo = repo;
         }
 
-        public IEnumerable<Book> GetAllBooks()
+        public IQueryable<Book> GetAllBooks()
         {
             return _repo.GetAll();
         }
@@ -22,14 +24,15 @@ namespace Service.Service
             _repo.Add(book);
         }
 
-        public void DeleteBook(int id)
+        public void DeleteBook(Book bk)
         {
-            _repo.Delete(id);
+            _repo.Delete(x => x.Id.Equals(bk.Id));
         }
 
-        public Book GetBookById(int id)
+
+        public Book GetBookById(Book book)
         {
-            return _repo.GetById(id);
+            return _repo.GetById(x => x.Id.Equals(book)).FirstOrDefault();
         }
 
         public void UpdateBook(int id, Book book)

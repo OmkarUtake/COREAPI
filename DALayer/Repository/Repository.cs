@@ -1,52 +1,51 @@
 ﻿using COREAPI.DATA;
 using DALayer.IRepository;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 
 namespace DALayer
 {
     public class Repository<T> : IRepository<T> where T : class
     {
         private readonly BookDBContext _db;
-        private readonly DbSet<T> _dbSet;
 
         public Repository(BookDBContext db)
         {
             _db = db;
-            _dbSet = _db.Set<T>();
         }
 
-        public void Add(T book)
+        public IQueryable<T> GetAll()
         {
-            _dbSet.Add(book);
+            return _db.Set<T>().AsNoTracking();
+        }
+
+        public IQueryable<T> GetById(Expression<Func<T, bool>> expression)
+        {
+            return _db.Set<T>().Where(expression).AsNoTracking();
+        }
+
+        public void Add(T model)
+        {
+            _db.Add(model);
             _db.SaveChanges();
         }
 
-        public void Delete(int id)
+        public void Delete(Expression<Func<T, bool>> experssion)
         {
-            T model = _dbSet.Find(id);
-            _dbSet.Remove(model);
+            var data = _db.Set<T>().Where(experssion).FirstOrDefault();
+            _db.Set<T>().Remove(data);
             _db.SaveChanges();
-        }
 
-        public IEnumerable<T> GetAll()
-        {
-            return _dbSet.AsEnumerable();
-        }
 
-        public T GetById(int id)
-        {
-            var model = _dbSet.Find(id);
-            return model;
         }
 
         public void Update(int id, T model)
         {
-            _dbSet.Update(model);
+            _db.Update(model);
             _db.SaveChanges();
         }
-
-
     }
 }
