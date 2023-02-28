@@ -11,7 +11,8 @@ namespace Service.IService
         IQueryable<Book> GetAllBooks();
         void AddBook(Book book);
         void UpdateBook(int id, Book book);
-        void DeleteBook(Book bk);
-        Book GetBookById(Book book);
+        void DeleteBook(int id);
+        IQueryable GetBookById(int id);
+        List<Book> SearchByName(string name);
     }
 }

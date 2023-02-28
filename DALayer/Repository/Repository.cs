@@ -38,8 +38,6 @@ namespace DALayer
             var data = _db.Set<T>().Where(experssion).FirstOrDefault();
             _db.Set<T>().Remove(data);
             _db.SaveChanges();
-
-
         }
 
         public void Update(int id, T model)

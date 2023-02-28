@@ -24,15 +24,15 @@ namespace Service.Service
             _repo.Add(book);
         }
 
-        public void DeleteBook(Book bk)
+        public void DeleteBook(int id)
         {
-            _repo.Delete(x => x.Id.Equals(bk.Id));
+            _repo.Delete(x => x.Id == id);
         }
 
 
-        public Book GetBookById(Book book)
+        public IQueryable GetBookById(int id)
         {
-            return _repo.GetById(x => x.Id.Equals(book)).FirstOrDefault();
+            return _repo.GetById(x => x.Id == id);
         }
 
         public void UpdateBook(int id, Book book)

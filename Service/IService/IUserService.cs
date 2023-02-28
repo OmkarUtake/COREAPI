@@ -1,5 +1,6 @@
 ﻿using CORE.Model.Model;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace CORE.Service.IService
 {
@@ -9,7 +10,7 @@ namespace CORE.Service.IService
         void Add(User user);
         void Update(int id, User user);
         void Delete(int id);
-        User Details(int id);
+        IQueryable Details(int id);
         List<User> SearchByName(string name);
     }
 }

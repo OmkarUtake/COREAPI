@@ -2,6 +2,7 @@
 using COREAPI.DATA;
 using DALayer.IRepository;
 using Microsoft.AspNetCore.Mvc;
+using Service.IService;
 using System;
 
 namespace COREAPI.Controllers
@@ -11,10 +12,10 @@ namespace COREAPI.Controllers
     public class BooksController : ControllerBase
     {
 
-        private readonly IBookRepository _bookservice;
+        private readonly IBookService _bookservice;
 
 
-        public BooksController(IBookRepository bookService)
+        public BooksController(IBookService bookService)
         {
             _bookservice = bookService;
         }
@@ -22,42 +23,42 @@ namespace COREAPI.Controllers
         [HttpPost("AddNew")]
         public IActionResult AddBook([FromBody] Book book)
         {
-            _bookservice.Add(book);
+            _bookservice.AddBook(book);
             return Ok();
         }
 
         [HttpGet("GetAll")]
         public IActionResult GetBook()
         {
-            var book = _bookservice.GetAll();
+            var book = _bookservice.GetAllBooks();
             return Ok(book);
         }
 
         [HttpGet("GetById/{id}")]
         public IActionResult GetBookById(int id)
         {
-            var nBook = _bookservice.GetById(x => x.Id == id);
+            var nBook = _bookservice.GetBookById(id);
             return Ok(nBook);
         }
 
         [HttpPut("UpdateById/{id}")]
         public IActionResult UpdateBook(int id, Book book)
         {
-            _bookservice.Update(id, book);
+            _bookservice.UpdateBook(id, book);
             return Ok();
         }
 
         [HttpDelete("DeleteById/{id}")]
         public IActionResult DeleteBook(int id)
         {
-            _bookservice.Delete(x => x.Id == id);
+            _bookservice.DeleteBook(id);
             return Ok();
         }
 
         [HttpGet("SearchByName/{name}")]
         public IActionResult SearchByName(String name)
         {
-            var book = _bookservice.SearchBookByName(name);
+            var book = _bookservice.SearchByName(name);
             return Ok(book);
         }
     }

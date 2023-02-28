@@ -1,6 +1,7 @@
 using CORE.Database.IRepository;
 using CORE.Database.Repository;
 using CORE.Service.IService;
+using CORE.Service.Service;
 //using CORE.Service.Service;
 using COREAPI.DATA;
 using DALayer.IRepository;
@@ -36,7 +37,7 @@ namespace COREAPI
             services.AddTransient<IBookService, BookService>();
             services.AddTransient<IBookRepository, BookRepository>();
             services.AddTransient<IUserRepository, UserRepository>();
-            //services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IUserService, UserService>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "COREAPI", Version = "v1" });
