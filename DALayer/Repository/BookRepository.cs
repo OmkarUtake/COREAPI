@@ -1,6 +1,6 @@
-﻿using COREAPI.DATA;
+﻿using CORE.Model.DTO;
+using COREAPI.DATA;
 using DALayer.IRepository;
-using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -15,10 +15,17 @@ namespace DALayer.Repository
             _db = db;
         }
 
-        public List<Book> SearchBookByName(string name)
+        public IQueryable<Book> SearchBookByName(string name)
         {
-            var model = _db.Books.Where(x => x.Title == name).ToList();
-            return model;
+
+            var data = from x in _db.Books
+                       select new Book()
+                       {
+
+                           CoverUrl = x.CoverUrl,
+                           Author = x.Author,
+                       };
+            return data;
         }
     }
 }

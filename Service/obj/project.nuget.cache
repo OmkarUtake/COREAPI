@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "5yuwevdLxNx5iqCmDjeCM8Z1vWIqg3jYwsOAuJwK6nTsvHsPLYCAsw6etauiaEh5MGNr25y2ASCrWBjjRuBKqA==",
+  "dgSpecHash": "gquA4RKheVrr97Ut5/K0finbHtcqvt/VjQ2L9VCiIGCMU5mc9L9kDvW/0+neOGuw4YkS+mgsfl5hMQMcjMXh4Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Nimap\\New folder\\COREAPI\\Service\\CORE.Service.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Nimap\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Nimap\\.nuget\\packages\\entityframework\\5.0.0\\entityframework.5.0.0.nupkg.sha512",
+    "C:\\Users\\Nimap\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Nimap\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.2\\microsoft.entityframeworkcore.5.0.2.nupkg.sha512",
     "C:\\Users\\Nimap\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.2\\microsoft.entityframeworkcore.abstractions.5.0.2.nupkg.sha512",
     "C:\\Users\\Nimap\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.2\\microsoft.entityframeworkcore.analyzers.5.0.2.nupkg.sha512",

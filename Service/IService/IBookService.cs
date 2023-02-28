@@ -1,4 +1,5 @@
-﻿using COREAPI.DATA;
+﻿using CORE.Model.DTO;
+using COREAPI.DATA;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,6 @@ namespace Service.IService
         void UpdateBook(int id, Book book);
         void DeleteBook(int id);
         IQueryable GetBookById(int id);
-        List<Book> SearchByName(string name);
+        IQueryable<Book> SearchByName(string name);
     }
 }

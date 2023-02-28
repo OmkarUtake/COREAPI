@@ -1,13 +1,8 @@
 ﻿using CORE.Database.IRepository;
 using CORE.Model.Model;
 using CORE.Service.IService;
-using COREAPI.DATA;
-using DALayer;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CORE.Service.Service
 {
@@ -37,7 +32,7 @@ namespace CORE.Service.Service
 
         public IEnumerable<User> GetAll()
         {
-            return _userRepo.GetAll();
+            return (IEnumerable<User>)_userRepo.GetAll();
         }
 
         public List<User> SearchByName(string name)

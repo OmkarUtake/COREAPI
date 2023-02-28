@@ -70,3 +70,4 @@ C:\Users\Nimap\New folder\COREAPI\COREAPI\obj\Debug\net5.0\refint\CORE.Api.dll
 C:\Users\Nimap\New folder\COREAPI\COREAPI\obj\Debug\net5.0\CORE.Api.pdb
 C:\Users\Nimap\New folder\COREAPI\COREAPI\obj\Debug\net5.0\CORE.Api.genruntimeconfig.cache
 C:\Users\Nimap\New folder\COREAPI\COREAPI\obj\Debug\net5.0\ref\CORE.Api.dll
+C:\Users\Nimap\New folder\COREAPI\COREAPI\bin\Debug\net5.0\AutoMapper.dll

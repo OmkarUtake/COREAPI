@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "uZrVA+SIZ0ofEUFi9sRLJSjj+u1cetf/IZrw/Qkmnle45vc6A7PG4V3j8rjP498ghTpjn9jb/pymG6G9XoTb2w==",
+  "dgSpecHash": "9K8FX+va2vW8TQzUsVeUNEzOBoQaINfi6Wi6Ti3Q2m8ycbUSrH7/DQzsGrFlV8+GFtwMO0Iy5rynHVbztcAIwQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Nimap\\New folder\\COREAPI\\COREAPI\\CORE.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Nimap\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Nimap\\.nuget\\packages\\entityframework\\5.0.0\\entityframework.5.0.0.nupkg.sha512",
     "C:\\Users\\Nimap\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Nimap\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

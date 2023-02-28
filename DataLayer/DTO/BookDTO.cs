@@ -2,7 +2,7 @@
 
 namespace CORE.Model.DTO
 {
-    public class BookViewModel
+    public class BookDTO
     {
         public string Title { get; set; }
         public string Description { get; set; }
@@ -11,5 +11,6 @@ namespace CORE.Model.DTO
         public string Author { get; set; }
         public string CoverUrl { get; set; }
         public DateTime DateAdded { get; set; }
+
     }
 }

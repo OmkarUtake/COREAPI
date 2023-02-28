@@ -1,3 +1,4 @@
+using CORE.Api;
 using CORE.Database.IRepository;
 using CORE.Database.Repository;
 using CORE.Service.IService;
@@ -42,6 +43,13 @@ namespace COREAPI
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "COREAPI", Version = "v1" });
             });
+
+            var config = new AutoMapper.MapperConfiguration(c =>
+            {
+                c.AddProfile(new ApplicationProfile());
+            });
+            var mapper = config.CreateMapper();
+            services.AddSingleton(mapper);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

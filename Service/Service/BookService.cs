@@ -1,4 +1,5 @@
-﻿using COREAPI.DATA;
+﻿using CORE.Model.DTO;
+using COREAPI.DATA;
 using DALayer.IRepository;
 using Service.IService;
 using System;
@@ -40,9 +41,9 @@ namespace Service.Service
             _repo.Update(id, book);
         }
 
-        public List<Book> SearchByName(string name)
+        public IQueryable<Book> SearchByName(string name)
         {
-            List<Book> book = _repo.SearchBookByName(name);
+            IQueryable<Book> book = _repo.SearchBookByName(name);
             return book;
         }
     }

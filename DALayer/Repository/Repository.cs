@@ -18,7 +18,8 @@ namespace DALayer
 
         public IQueryable<T> GetAll()
         {
-            return _db.Set<T>().AsNoTracking();
+            var data = _db.Set<T>().AsNoTracking();
+            return data;
         }
 
         public IQueryable<T> GetById(Expression<Func<T, bool>> expression)
