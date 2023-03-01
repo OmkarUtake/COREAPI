@@ -56,10 +56,6 @@ namespace COREAPI.Controllers
         [HttpPut("UpdateById/{id}")]
         public async Task<IActionResult> UpdateBook(int id, Book book)
         {
-            if (book == null)
-            {
-                throw new Exception("Please Enter valid data to update");
-            }
             await _bookservice.UpdateBook(id, book);
             return Ok();
         }
@@ -75,10 +71,6 @@ namespace COREAPI.Controllers
         public async Task<IActionResult> SearchByName(String name)
         {
             var book = await _bookservice.SearchByName(name);
-            if (book == null)
-            {
-                throw new Exception("Detail not found");
-            }
             return Ok(book);
         }
     }

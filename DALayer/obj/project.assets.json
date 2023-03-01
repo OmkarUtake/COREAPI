@@ -829,7 +829,7 @@
       "projectName": "CORE.Database",
       "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DALayer\\CORE.Database.csproj",
       "packagesPath": "C:\\Users\\Nimap\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DALayer\\obj\\",
+      "outputPath": "C:\\Users\\Nimap\\New folder\\COREApi\\DALayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nimap\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -44,7 +44,7 @@ namespace Service.Service
 
         public async Task<List<Book>> SearchByName(string name)
         {
-            List<Book> book =await _repo.SearchBookByName(name);
+            List<Book> book = await _repo.SearchBookByName(name);
             return book;
         }
     }

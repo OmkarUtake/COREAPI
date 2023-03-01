@@ -17,20 +17,9 @@ namespace COREAPI
             }
             catch (Exception ex)
             {
-                // await HandleExceptionAsync(context, ex);
                 await HandleExceptionsAsync(context, ex);
-
             }
         }
-
-        //private async Task HandleExceptionAsync(HttpContext context, Exception exception)
-        //{
-        //    context.Response.StatusCode = 500;
-        //    context.Response.ContentType = "application/json";
-        //    var errorResponse = new { error = exception.Message };
-        //    var json = JsonConvert.SerializeObject(errorResponse);
-        //    await context.Response.WriteAsync(json);
-        //}
 
         private async Task HandleExceptionsAsync(HttpContext context, Exception exception)
         {
