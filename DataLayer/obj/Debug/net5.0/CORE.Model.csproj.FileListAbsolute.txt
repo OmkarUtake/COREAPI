@@ -1,0 +1,24 @@
+C:\Users\Nimap\New folder\COREAPI\DataLayer\bin\Debug\net5.0\CORE.Model.deps.json
+C:\Users\Nimap\New folder\COREAPI\DataLayer\bin\Debug\net5.0\CORE.Model.dll
+C:\Users\Nimap\New folder\COREAPI\DataLayer\bin\Debug\net5.0\CORE.Model.pdb
+C:\Users\Nimap\New folder\COREAPI\DataLayer\obj\Debug\net5.0\CORE.Model.csproj.AssemblyReference.cache
+C:\Users\Nimap\New folder\COREAPI\DataLayer\obj\Debug\net5.0\CORE.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nimap\New folder\COREAPI\DataLayer\obj\Debug\net5.0\CORE.Model.AssemblyInfoInputs.cache
+C:\Users\Nimap\New folder\COREAPI\DataLayer\obj\Debug\net5.0\CORE.Model.AssemblyInfo.cs
+C:\Users\Nimap\New folder\COREAPI\DataLayer\obj\Debug\net5.0\CORE.Model.csproj.CoreCompileInputs.cache
+C:\Users\Nimap\New folder\COREAPI\DataLayer\obj\Debug\net5.0\CORE.Model.dll
+C:\Users\Nimap\New folder\COREAPI\DataLayer\obj\Debug\net5.0\refint\CORE.Model.dll
+C:\Users\Nimap\New folder\COREAPI\DataLayer\obj\Debug\net5.0\CORE.Model.pdb
+C:\Users\Nimap\New folder\COREAPI\DataLayer\obj\Debug\net5.0\ref\CORE.Model.dll
+C:\Users\Nimap\New folder\COREAPI - Copy\DataLayer\bin\Debug\net5.0\CORE.Model.deps.json
+C:\Users\Nimap\New folder\COREAPI - Copy\DataLayer\bin\Debug\net5.0\CORE.Model.dll
+C:\Users\Nimap\New folder\COREAPI - Copy\DataLayer\bin\Debug\net5.0\CORE.Model.pdb
+C:\Users\Nimap\New folder\COREAPI - Copy\DataLayer\obj\Debug\net5.0\CORE.Model.csproj.AssemblyReference.cache
+C:\Users\Nimap\New folder\COREAPI - Copy\DataLayer\obj\Debug\net5.0\CORE.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nimap\New folder\COREAPI - Copy\DataLayer\obj\Debug\net5.0\CORE.Model.AssemblyInfoInputs.cache
+C:\Users\Nimap\New folder\COREAPI - Copy\DataLayer\obj\Debug\net5.0\CORE.Model.AssemblyInfo.cs
+C:\Users\Nimap\New folder\COREAPI - Copy\DataLayer\obj\Debug\net5.0\CORE.Model.csproj.CoreCompileInputs.cache
+C:\Users\Nimap\New folder\COREAPI - Copy\DataLayer\obj\Debug\net5.0\CORE.Model.dll
+C:\Users\Nimap\New folder\COREAPI - Copy\DataLayer\obj\Debug\net5.0\refint\CORE.Model.dll
+C:\Users\Nimap\New folder\COREAPI - Copy\DataLayer\obj\Debug\net5.0\CORE.Model.pdb
+C:\Users\Nimap\New folder\COREAPI - Copy\DataLayer\obj\Debug\net5.0\ref\CORE.Model.dll
