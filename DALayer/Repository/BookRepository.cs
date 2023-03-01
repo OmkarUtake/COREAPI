@@ -1,8 +1,11 @@
-﻿using CORE.Model.DTO;
+﻿
+
 using COREAPI.DATA;
 using DALayer.IRepository;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace DALayer.Repository
 {
@@ -15,16 +18,17 @@ namespace DALayer.Repository
             _db = db;
         }
 
-        public IQueryable<Book> SearchBookByName(string name)
+        public async Task<List<Book>> SearchBookByName(string name)
         {
-
-            var data = from x in _db.Books
-                       select new Book()
-                       {
-
-                           CoverUrl = x.CoverUrl,
-                           Author = x.Author,
-                       };
+            var data = await _db.Books
+                     .Where(x => x.Title == name)
+                     .Select(x => new Book
+                     {
+                         Author = x.Author,
+                         CoverUrl = x.CoverUrl,
+                         Title = x.Title,
+                         Description = x.Description
+                     }).ToListAsync();
             return data;
         }
     }

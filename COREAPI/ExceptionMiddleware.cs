@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 
@@ -16,29 +17,47 @@ namespace COREAPI
             }
             catch (Exception ex)
             {
-                await HandleExceptionAsync(context, ex);
+                // await HandleExceptionAsync(context, ex);
+                await HandleExceptionsAsync(context, ex);
+
             }
         }
 
-        private static Task HandleExceptionAsync(HttpContext context, Exception exception)
-        {
-            var code = HttpStatusCode.InternalServerError;
-            var result = JsonConvert.SerializeObject(new { error = exception.Message });
-            context.Response.ContentType = "application/json";
+        //private async Task HandleExceptionAsync(HttpContext context, Exception exception)
+        //{
+        //    context.Response.StatusCode = 500;
+        //    context.Response.ContentType = "application/json";
+        //    var errorResponse = new { error = exception.Message };
+        //    var json = JsonConvert.SerializeObject(errorResponse);
+        //    await context.Response.WriteAsync(json);
+        //}
 
+        private async Task HandleExceptionsAsync(HttpContext context, Exception exception)
+        {
+            context.Response.StatusCode = 500;
+            context.Response.ContentType = "application/json";
+            string errorMessage;
             switch (exception)
             {
-                case ArgumentException _:
-                    code = HttpStatusCode.BadRequest;
+                case ArgumentNullException ex:
+                    errorMessage = "One or more required arguments are missing.";
+                    context.Response.StatusCode = 400;
                     break;
-                case InvalidOperationException _:
-                    code = HttpStatusCode.NotFound;
+                case InvalidOperationException ex:
+                    errorMessage = "The requested operation cannot be performed.";
+                    context.Response.StatusCode = 401;
                     break;
-
+                case KeyNotFoundException ex:
+                    errorMessage = "The requested resource was not found.";
+                    context.Response.StatusCode = 404;
+                    break;
+                default:
+                    errorMessage = "An unexpected error occurred while processing the request.";
+                    break;
             }
-
-            context.Response.StatusCode = (int)code;
-            return context.Response.WriteAsync(result);
+            var errorResponse = new { error = errorMessage, status = context.Response.StatusCode };
+            var json = JsonConvert.SerializeObject(errorResponse);
+            await context.Response.WriteAsync(json);
         }
     }
 }

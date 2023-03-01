@@ -2,8 +2,10 @@
 using DALayer.IRepository;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace DALayer
 {
@@ -16,34 +18,34 @@ namespace DALayer
             _db = db;
         }
 
-        public IQueryable<T> GetAll()
+        public async Task<List<T>> GetAll()
         {
-            var data = _db.Set<T>().AsNoTracking();
+            var data = await _db.Set<T>().ToListAsync();
             return data;
         }
 
-        public IQueryable<T> GetById(Expression<Func<T, bool>> expression)
+        public async Task<T> GetById(Expression<Func<T, bool>> expression)
         {
-            return _db.Set<T>().Where(expression).AsNoTracking();
+            return await _db.Set<T>().Where(expression).FirstOrDefaultAsync();
         }
 
-        public void Add(T model)
+        public async Task Add(T model)
         {
             _db.Add(model);
-            _db.SaveChanges();
+            await _db.SaveChangesAsync();
         }
 
-        public void Delete(Expression<Func<T, bool>> experssion)
+        public async Task Delete(Expression<Func<T, bool>> experssion)
         {
-            var data = _db.Set<T>().Where(experssion).FirstOrDefault();
+            var data = await _db.Set<T>().Where(experssion).FirstOrDefaultAsync();
             _db.Set<T>().Remove(data);
-            _db.SaveChanges();
+            await _db.SaveChangesAsync();
         }
 
-        public void Update(int id, T model)
+        public async Task Update(int id, T model)
         {
             _db.Update(model);
-            _db.SaveChanges();
+            await _db.SaveChangesAsync();
         }
     }
 }

@@ -1,16 +1,17 @@
 ﻿using CORE.Model.Model;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace CORE.Service.IService
 {
     public interface IUserService
     {
-        IEnumerable<User> GetAll();
-        void Add(User user);
-        void Update(int id, User user);
-        void Delete(int id);
-        IQueryable Details(int id);
-        List<User> SearchByName(string name);
+        Task<List<User>> GetAll();
+        Task Add(User user);
+        Task Update(int id, User user);
+        Task Delete(int id);
+        Task<User> Details(int id);
+        Task<List<User>> SearchByName(string name);
     }
 }

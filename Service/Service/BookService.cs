@@ -5,6 +5,7 @@ using Service.IService;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace Service.Service
 {
@@ -16,34 +17,34 @@ namespace Service.Service
             _repo = repo;
         }
 
-        public IQueryable<Book> GetAllBooks()
+        public async Task<List<Book>> GetAllBooks()
         {
-            return _repo.GetAll();
+            return await _repo.GetAll();
         }
-        public void AddBook(Book book)
+        public async Task AddBook(Book book)
         {
-            _repo.Add(book);
-        }
-
-        public void DeleteBook(int id)
-        {
-            _repo.Delete(x => x.Id == id);
+            await _repo.Add(book);
         }
 
-
-        public IQueryable GetBookById(int id)
+        public async Task DeleteBook(int id)
         {
-            return _repo.GetById(x => x.Id == id);
+            await _repo.Delete(x => x.Id == id);
         }
 
-        public void UpdateBook(int id, Book book)
+
+        public async Task<Book> GetBookById(int id)
         {
-            _repo.Update(id, book);
+            return await _repo.GetById(x => x.Id == id);
         }
 
-        public IQueryable<Book> SearchByName(string name)
+        public async Task UpdateBook(int id, Book book)
         {
-            IQueryable<Book> book = _repo.SearchBookByName(name);
+            await _repo.Update(id, book);
+        }
+
+        public async Task<List<Book>> SearchByName(string name)
+        {
+            List<Book> book =await _repo.SearchBookByName(name);
             return book;
         }
     }

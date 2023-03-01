@@ -4,16 +4,17 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace Service.IService
 {
     public interface IBookService
     {
-        IQueryable<Book> GetAllBooks();
-        void AddBook(Book book);
-        void UpdateBook(int id, Book book);
-        void DeleteBook(int id);
-        IQueryable GetBookById(int id);
-        IQueryable<Book> SearchByName(string name);
+        Task<List<Book>> GetAllBooks();
+        Task AddBook(Book book);
+        Task UpdateBook(int id, Book book);
+        Task DeleteBook(int id);
+        Task<Book> GetBookById(int id);
+        Task<List<Book>> SearchByName(string name);
     }
 }

@@ -3,7 +3,6 @@ using CORE.Database.IRepository;
 using CORE.Database.Repository;
 using CORE.Service.IService;
 using CORE.Service.Service;
-//using CORE.Service.Service;
 using COREAPI.DATA;
 using DALayer.IRepository;
 using DALayer.Repository;
@@ -35,6 +34,7 @@ namespace COREAPI
         {
             services.AddControllers();
             services.AddDbContext<BookDBContext>(options => options.UseSqlServer(ConnectionString));
+            services.AddTransient<ExceptionMiddleware>();
             services.AddTransient<IBookService, BookService>();
             services.AddTransient<IBookRepository, BookRepository>();
             services.AddTransient<IUserRepository, UserRepository>();
@@ -62,6 +62,7 @@ namespace COREAPI
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "COREAPI v1"));
             }
             app.UseHttpsRedirection();
+            app.UseMiddleware<ExceptionMiddleware>();
             app.UseRouting();
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>

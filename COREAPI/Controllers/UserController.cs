@@ -3,6 +3,7 @@ using CORE.Service.IService;
 using COREAPI.DATA;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Threading.Tasks;
 
 namespace CORE.Api.Controllers
 {
@@ -17,37 +18,37 @@ namespace CORE.Api.Controllers
         }
 
         [HttpPost("AddNew")]
-        public IActionResult AddUSer([FromBody] User user)
+        public async Task<IActionResult> AddUSer([FromBody] User user)
         {
-            _user.Add(user);
+            await _user.Add(user);
             return Ok();
         }
 
         [HttpGet("GetAll")]
-        public IActionResult GetUser()
+        public async Task<IActionResult> GetUser()
         {
-            var users = _user.GetAll();
+            var users = await _user.GetAll();
             return Ok(users);
         }
 
         [HttpGet("GetById/{id}")]
-        public IActionResult GetUser(int id)
+        public async Task<IActionResult> GetUser(int id)
         {
-            var user = _user.Details(id);
+            var user = await _user.Details(id);
             return Ok(user);
         }
 
         [HttpDelete("DeleteById/{id}")]
-        public IActionResult DeleteUser(int id)
+        public async Task<IActionResult> DeleteUser(int id)
         {
-            _user.Delete(id);
+            await _user.Delete(id);
             return Ok();
         }
 
         [HttpPut("UpdateById/{id}")]
-        public IActionResult UpdateUser(int id, User user)
+        public async Task<IActionResult> UpdateUser(int id, User user)
         {
-            _user.Update(id, user);
+            await _user.Update(id, user);
             return Ok();
         }
 

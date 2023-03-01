@@ -2,6 +2,7 @@
 using CORE.Model.Model;
 using COREAPI.DATA;
 using DALayer;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,9 +20,9 @@ namespace CORE.Database.Repository
             _db = db;
         }
 
-        public List<User> SearchUserByName(string name)
+        public async Task<List<User>> SearchUserByName(string name)
         {
-            var users = _db.Users.Where(x => x.UserName == name).ToList();
+            var users = await _db.Users.Where(x => x.UserName == name).ToListAsync();
             return users;
         }
     }

@@ -7,6 +7,7 @@ using Service.IService;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace COREAPI.Controllers
 {
@@ -26,46 +27,58 @@ namespace COREAPI.Controllers
         }
 
         [HttpPost("AddNew")]
-        public IActionResult AddBook([FromBody] BookDTO bookDTO)
+        public async Task<IActionResult> AddBook([FromBody] BookDTO bookDTO)
         {
             var book = _mapper.Map<Book>(bookDTO);
-            _bookservice.AddBook(book);
+            await _bookservice.AddBook(book);
             return Ok();
         }
 
         [HttpGet("GetAll")]
-        public IActionResult GetBook()
+        public async Task<IActionResult> GetBook()
         {
-            Book book = (Book)_bookservice.GetAllBooks();
+            var book = await _bookservice.GetAllBooks();
             return Ok(book);
         }
 
         [HttpGet("GetById/{id}")]
-        public IActionResult GetBookById(int id)
+        public async Task<IActionResult> GetBookById(int id)
         {
-            var Book = _bookservice.GetBookById(id);
+            var Book = await _bookservice.GetBookById(id);
+            if (Book == null)
+            {
+                throw new Exception("Please Enter valid id");
+            }
             var bookDTO = _mapper.Map<BookDTO>(Book);
             return Ok(bookDTO);
         }
 
         [HttpPut("UpdateById/{id}")]
-        public IActionResult UpdateBook(int id, Book book)
+        public async Task<IActionResult> UpdateBook(int id, Book book)
         {
-            _bookservice.UpdateBook(id, book);
+            if (book == null)
+            {
+                throw new Exception("Please Enter valid data to update");
+            }
+            await _bookservice.UpdateBook(id, book);
             return Ok();
         }
 
         [HttpDelete("DeleteById/{id}")]
-        public IActionResult DeleteBook(int id)
+        public async Task<IActionResult> DeleteBook(int id)
         {
-            _bookservice.DeleteBook(id);
+            await _bookservice.DeleteBook(id);
             return Ok();
         }
 
         [HttpGet("SearchByName/{name}")]
-        public IActionResult SearchByName(String name)
+        public async Task<IActionResult> SearchByName(String name)
         {
-            var book = _bookservice.SearchByName(name);
+            var book = await _bookservice.SearchByName(name);
+            if (book == null)
+            {
+                throw new Exception("Detail not found");
+            }
             return Ok(book);
         }
     }

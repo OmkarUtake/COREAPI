@@ -3,6 +3,7 @@ using CORE.Model.Model;
 using CORE.Service.IService;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace CORE.Service.Service
 {
@@ -14,36 +15,36 @@ namespace CORE.Service.Service
             _userRepo = userRepo;
         }
 
-        public void Add(User user)
+        public async Task Add(User user)
         {
-            _userRepo.Add(user);
+            await _userRepo.Add(user);
         }
 
-        public void Delete(int id)
+        public async Task Delete(int id)
         {
-            _userRepo.Delete(x => x.Id == id);
+            await _userRepo.Delete(x => x.Id == id);
         }
 
-        public IQueryable Details(int id)
+        public async Task<User> Details(int id)
         {
-            var data = _userRepo.GetById(x => x.Id == id);
+            var data = await _userRepo.GetById(x => x.Id == id);
             return data;
         }
 
-        public IEnumerable<User> GetAll()
+        public async Task<List<User>> GetAll()
         {
-            return (IEnumerable<User>)_userRepo.GetAll();
+            return await _userRepo.GetAll();
         }
 
-        public List<User> SearchByName(string name)
+        public async Task<List<User>> SearchByName(string name)
         {
-            var users = _userRepo.SearchUserByName(name);
+            var users = await _userRepo.SearchUserByName(name);
             return users;
         }
 
-        public void Update(int id, User user)
+        public async Task Update(int id, User user)
         {
-            _userRepo.Update(id, user);
+            await _userRepo.Update(id, user);
         }
     }
 }
