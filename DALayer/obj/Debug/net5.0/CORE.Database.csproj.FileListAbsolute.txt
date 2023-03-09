@@ -10,7 +10,6 @@ C:\Users\Nimap\New folder\COREAPI\DALayer\obj\Debug\net5.0\CORE.Database.Assembl
 C:\Users\Nimap\New folder\COREAPI\DALayer\obj\Debug\net5.0\CORE.Database.csproj.CoreCompileInputs.cache
 C:\Users\Nimap\New folder\COREAPI\DALayer\obj\Debug\net5.0\CORE.Database.csproj.CopyComplete
 C:\Users\Nimap\New folder\COREAPI\DALayer\obj\Debug\net5.0\CORE.Database.dll
-C:\Users\Nimap\New folder\COREAPI\DALayer\obj\Debug\net5.0\refint\CORE.Database.dll
 C:\Users\Nimap\New folder\COREAPI\DALayer\obj\Debug\net5.0\CORE.Database.pdb
 C:\Users\Nimap\New folder\COREAPI\DALayer\obj\Debug\net5.0\ref\CORE.Database.dll
 C:\Users\Nimap\New folder\COREAPI - Copy\DALayer\bin\Debug\net5.0\CORE.Database.deps.json
@@ -28,3 +27,4 @@ C:\Users\Nimap\New folder\COREAPI - Copy\DALayer\obj\Debug\net5.0\CORE.Database.
 C:\Users\Nimap\New folder\COREAPI - Copy\DALayer\obj\Debug\net5.0\refint\CORE.Database.dll
 C:\Users\Nimap\New folder\COREAPI - Copy\DALayer\obj\Debug\net5.0\CORE.Database.pdb
 C:\Users\Nimap\New folder\COREAPI - Copy\DALayer\obj\Debug\net5.0\ref\CORE.Database.dll
+C:\Users\Nimap\New folder\COREApi\DALayer\bin\Debug\net5.0\ref\CORE.Database.dll

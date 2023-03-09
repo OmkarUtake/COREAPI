@@ -28,13 +28,23 @@ namespace Service.Service
 
         public async Task DeleteBook(int id)
         {
+            var Bookdata = await _repo.GetById(x => x.Id == id);
+            if (Bookdata == null)
+            {
+                throw new KeyNotFoundException();
+            }
             await _repo.Delete(x => x.Id == id);
         }
 
 
         public async Task<Book> GetBookById(int id)
         {
-            return await _repo.GetById(x => x.Id == id);
+            var Bookdata = await _repo.GetById(x => x.Id == id);
+            if (Bookdata == null)
+            {
+                throw new KeyNotFoundException();
+            }
+            return Bookdata;
         }
 
         public async Task UpdateBook(int id, Book book)
@@ -45,6 +55,10 @@ namespace Service.Service
         public async Task<List<Book>> SearchByName(string name)
         {
             List<Book> book = await _repo.SearchBookByName(name);
+            if (book == null)
+            {
+                throw new KeyNotFoundException();
+            }
             return book;
         }
     }

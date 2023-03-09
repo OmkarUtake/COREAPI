@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4HFE8XtaTW2ro52Uok+zY5OpMP3ki7/XCDVa9IHKmK7PpnHDqHVphYRwdX7EfmtQHRZwYlPGqWJwMQByp26+uQ==",
+  "dgSpecHash": "9eSazuCBMln7C/aWT+OUqQrai4xtkRkVo0p9S77cbVa97vgGaz/JzOBZDO+G2qazi0m+UM4VR715tOgxk2dAeA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\CORE.Model.csproj",
+  "projectFilePath": "C:\\Users\\Nimap\\New folder\\COREApi\\DataLayer\\CORE.Model.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nimap\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Nimap\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

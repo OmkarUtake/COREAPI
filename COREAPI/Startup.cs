@@ -27,13 +27,12 @@ namespace COREAPI
             ConnectionString = Configuration.GetConnectionString("DefaultConnectionString");
         }
 
-        public IConfiguration Configuration { get; }
+        public IConfiguration Configuration { get; }    //inject the configuration like app-json 
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
-            services.AddDbContext<BookDBContext>(options => options.UseSqlServer(ConnectionString));
+            services.AddControllers();    //add mvc framework,Able to handle http request. 
+            services.AddDbContext<BookDBContext>(options => options.UseSqlServer(ConnectionString)); //enables to interact with database through Generic class
             services.AddTransient<ExceptionMiddleware>();
             services.AddScoped<IBookService, BookService>();
             services.AddScoped<IBookRepository, BookRepository>();
@@ -52,12 +51,12 @@ namespace COREAPI
             services.AddSingleton(mapper);
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)   //This is middleware pipeline handler
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                app.UseDeveloperExceptionPage(); //This cathces the exceptions during http request 
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "COREAPI v1"));
             }
@@ -65,7 +64,7 @@ namespace COREAPI
             app.UseRouting();
             app.UseMiddleware<ExceptionMiddleware>();
             app.UseAuthorization();
-            app.UseEndpoints(endpoints =>
+            app.UseEndpoints(endpoints =>      //This maps the request with the controller and action method
                              {
                                  endpoints.MapControllers();
                              });

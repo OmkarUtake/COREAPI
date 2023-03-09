@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nimap\\New folder\\COREAPI\\COREAPI\\CORE.Api.csproj": {}
+    "C:\\Users\\Nimap\\New folder\\COREApi\\COREAPI\\CORE.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nimap\\New folder\\COREAPI\\COREAPI\\CORE.Api.csproj": {
+    "C:\\Users\\Nimap\\New folder\\COREApi\\COREAPI\\CORE.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nimap\\New folder\\COREAPI\\COREAPI\\CORE.Api.csproj",
+        "projectUniqueName": "C:\\Users\\Nimap\\New folder\\COREApi\\COREAPI\\CORE.Api.csproj",
         "projectName": "CORE.Api",
-        "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\COREAPI\\CORE.Api.csproj",
+        "projectPath": "C:\\Users\\Nimap\\New folder\\COREApi\\COREAPI\\CORE.Api.csproj",
         "packagesPath": "C:\\Users\\Nimap\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\COREAPI\\obj\\",
+        "outputPath": "C:\\Users\\Nimap\\New folder\\COREApi\\COREAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nimap\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,14 +28,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Nimap\\New folder\\COREAPI\\DALayer\\CORE.Database.csproj": {
-                "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DALayer\\CORE.Database.csproj"
+              "C:\\Users\\Nimap\\New folder\\COREApi\\DALayer\\CORE.Database.csproj": {
+                "projectPath": "C:\\Users\\Nimap\\New folder\\COREApi\\DALayer\\CORE.Database.csproj"
               },
-              "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\CORE.Model.csproj": {
-                "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\CORE.Model.csproj"
+              "C:\\Users\\Nimap\\New folder\\COREApi\\DataLayer\\CORE.Model.csproj": {
+                "projectPath": "C:\\Users\\Nimap\\New folder\\COREApi\\DataLayer\\CORE.Model.csproj"
               },
-              "C:\\Users\\Nimap\\New folder\\COREAPI\\Service\\CORE.Service.csproj": {
-                "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\Service\\CORE.Service.csproj"
+              "C:\\Users\\Nimap\\New folder\\COREApi\\Service\\CORE.Service.csproj": {
+                "projectPath": "C:\\Users\\Nimap\\New folder\\COREApi\\Service\\CORE.Service.csproj"
               }
             }
           }
@@ -79,8 +79,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -92,18 +91,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Nimap\\New folder\\COREAPI\\DALayer\\CORE.Database.csproj": {
+    "C:\\Users\\Nimap\\New folder\\COREApi\\DALayer\\CORE.Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nimap\\New folder\\COREAPI\\DALayer\\CORE.Database.csproj",
+        "projectUniqueName": "C:\\Users\\Nimap\\New folder\\COREApi\\DALayer\\CORE.Database.csproj",
         "projectName": "CORE.Database",
-        "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DALayer\\CORE.Database.csproj",
+        "projectPath": "C:\\Users\\Nimap\\New folder\\COREApi\\DALayer\\CORE.Database.csproj",
         "packagesPath": "C:\\Users\\Nimap\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DALayer\\obj\\",
+        "outputPath": "C:\\Users\\Nimap\\New folder\\COREApi\\DALayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nimap\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -120,8 +119,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\CORE.Model.csproj": {
-                "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\CORE.Model.csproj"
+              "C:\\Users\\Nimap\\New folder\\COREApi\\DataLayer\\CORE.Model.csproj": {
+                "projectPath": "C:\\Users\\Nimap\\New folder\\COREApi\\DataLayer\\CORE.Model.csproj"
               }
             }
           }
@@ -159,8 +158,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -169,18 +167,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\CORE.Model.csproj": {
+    "C:\\Users\\Nimap\\New folder\\COREApi\\DataLayer\\CORE.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\CORE.Model.csproj",
+        "projectUniqueName": "C:\\Users\\Nimap\\New folder\\COREApi\\DataLayer\\CORE.Model.csproj",
         "projectName": "CORE.Model",
-        "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\CORE.Model.csproj",
+        "projectPath": "C:\\Users\\Nimap\\New folder\\COREApi\\DataLayer\\CORE.Model.csproj",
         "packagesPath": "C:\\Users\\Nimap\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\obj\\",
+        "outputPath": "C:\\Users\\Nimap\\New folder\\COREApi\\DataLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nimap\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -224,8 +222,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -234,18 +231,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Nimap\\New folder\\COREAPI\\Service\\CORE.Service.csproj": {
+    "C:\\Users\\Nimap\\New folder\\COREApi\\Service\\CORE.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nimap\\New folder\\COREAPI\\Service\\CORE.Service.csproj",
+        "projectUniqueName": "C:\\Users\\Nimap\\New folder\\COREApi\\Service\\CORE.Service.csproj",
         "projectName": "CORE.Service",
-        "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\Service\\CORE.Service.csproj",
+        "projectPath": "C:\\Users\\Nimap\\New folder\\COREApi\\Service\\CORE.Service.csproj",
         "packagesPath": "C:\\Users\\Nimap\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\Service\\obj\\",
+        "outputPath": "C:\\Users\\Nimap\\New folder\\COREApi\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nimap\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -262,11 +259,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Nimap\\New folder\\COREAPI\\DALayer\\CORE.Database.csproj": {
-                "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DALayer\\CORE.Database.csproj"
+              "C:\\Users\\Nimap\\New folder\\COREApi\\DALayer\\CORE.Database.csproj": {
+                "projectPath": "C:\\Users\\Nimap\\New folder\\COREApi\\DALayer\\CORE.Database.csproj"
               },
-              "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\CORE.Model.csproj": {
-                "projectPath": "C:\\Users\\Nimap\\New folder\\COREAPI\\DataLayer\\CORE.Model.csproj"
+              "C:\\Users\\Nimap\\New folder\\COREApi\\DataLayer\\CORE.Model.csproj": {
+                "projectPath": "C:\\Users\\Nimap\\New folder\\COREApi\\DataLayer\\CORE.Model.csproj"
               }
             }
           }
@@ -292,8 +289,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -302,7 +298,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
         }
       }
     }

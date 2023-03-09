@@ -7,7 +7,6 @@ C:\Users\Nimap\New folder\COREAPI\DataLayer\obj\Debug\net5.0\CORE.Model.Assembly
 C:\Users\Nimap\New folder\COREAPI\DataLayer\obj\Debug\net5.0\CORE.Model.AssemblyInfo.cs
 C:\Users\Nimap\New folder\COREAPI\DataLayer\obj\Debug\net5.0\CORE.Model.csproj.CoreCompileInputs.cache
 C:\Users\Nimap\New folder\COREAPI\DataLayer\obj\Debug\net5.0\CORE.Model.dll
-C:\Users\Nimap\New folder\COREAPI\DataLayer\obj\Debug\net5.0\refint\CORE.Model.dll
 C:\Users\Nimap\New folder\COREAPI\DataLayer\obj\Debug\net5.0\CORE.Model.pdb
 C:\Users\Nimap\New folder\COREAPI\DataLayer\obj\Debug\net5.0\ref\CORE.Model.dll
 C:\Users\Nimap\New folder\COREAPI - Copy\DataLayer\bin\Debug\net5.0\CORE.Model.deps.json
@@ -22,3 +21,4 @@ C:\Users\Nimap\New folder\COREAPI - Copy\DataLayer\obj\Debug\net5.0\CORE.Model.d
 C:\Users\Nimap\New folder\COREAPI - Copy\DataLayer\obj\Debug\net5.0\refint\CORE.Model.dll
 C:\Users\Nimap\New folder\COREAPI - Copy\DataLayer\obj\Debug\net5.0\CORE.Model.pdb
 C:\Users\Nimap\New folder\COREAPI - Copy\DataLayer\obj\Debug\net5.0\ref\CORE.Model.dll
+C:\Users\Nimap\New folder\COREApi\DataLayer\bin\Debug\net5.0\ref\CORE.Model.dll

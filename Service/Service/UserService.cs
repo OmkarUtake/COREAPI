@@ -17,11 +17,20 @@ namespace CORE.Service.Service
 
         public async Task Add(User user)
         {
+            if (user == null)
+            {
+                throw new System.Exception();
+            }
             await _userRepo.Add(user);
         }
 
         public async Task Delete(int id)
         {
+            var data = await _userRepo.GetById(x => x.Id == id);
+            if (data == null)
+            {
+                throw new KeyNotFoundException();
+            }
             await _userRepo.Delete(x => x.Id == id);
         }
 
